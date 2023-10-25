@@ -1,0 +1,6 @@
+@Blau.Flex.Api_HostAddress = http://localhost:5230
+
+GET {{Blau.Flex.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
