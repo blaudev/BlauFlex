@@ -22,7 +22,7 @@ namespace Blau.Flex.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Blau.Flex.UseCases.TenantAggregate.Tenant", b =>
+            modelBuilder.Entity("Blau.Flex.Core.TenantAggregate.Tenant", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

@@ -1,6 +1,6 @@
 ﻿using Blau.Entities;
 
-namespace Blau.Flex.UseCases.TenantAggregate;
+namespace Blau.Flex.Core.TenantAggregate;
 
 public class Tenant : Entity, IAggregateRoot
 {

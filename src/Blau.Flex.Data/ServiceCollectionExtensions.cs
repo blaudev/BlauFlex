@@ -14,6 +14,8 @@ public static class ServiceCollectionExtensions
             options.UseNpgsql(configuration.GetConnectionString("ApplicationDatabaseContext"));
         });
 
+        services.AddDatabaseDeveloperPageExceptionFilter();
+
         return services;
     }
 }

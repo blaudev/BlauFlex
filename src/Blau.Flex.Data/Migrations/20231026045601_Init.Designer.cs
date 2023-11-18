@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Blau.Flex.Data.Migrations
 {
     [DbContext(typeof(ApplicationDatabaseContext))]
-    [Migration("20231024181229_Add_Minimal_Tenant")]
-    partial class Add_Minimal_Tenant
+    [Migration("20231026045601_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace Blau.Flex.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Blau.Flex.UseCases.TenantAggregate.Tenant", b =>
+            modelBuilder.Entity("Blau.Flex.Core.TenantAggregate.Tenant", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

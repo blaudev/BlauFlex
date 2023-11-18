@@ -1,5 +1,5 @@
 ﻿using Blau.Data;
-using Blau.Flex.UseCases.TenantAggregate;
+using Blau.Flex.Core.TenantAggregate;
 using Blau.Services;
 
 using Microsoft.EntityFrameworkCore;
